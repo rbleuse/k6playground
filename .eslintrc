@@ -1,0 +1,8 @@
+{
+    "plugins": [
+        "k6-linting-rules"
+    ],
+    "rules": {
+        "k6-linting-rules/k6": 2
+    }
+}

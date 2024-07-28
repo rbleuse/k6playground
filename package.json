@@ -1,0 +1,8 @@
+{
+  "name": "k6test",
+  "devDependencies": {
+    "@types/k6": "^0.52.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-k6-linting-rules": "^0.0.3"
+  }
+}
