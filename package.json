@@ -1,5 +1,5 @@
 {
-  "name": "k6test",
+  "name": "k6playground",
   "devDependencies": {
     "@types/k6": "^0.52.0",
     "eslint": "^9.8.0",

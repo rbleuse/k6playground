@@ -1,5 +1,5 @@
 import http from 'k6/http';
-import { check, sleep } from 'k6';
+import { check } from 'k6';
 
 /**
  * Test configuration
@@ -34,12 +34,10 @@ export const options = {
  * Add crocodiles test case
  */
 export function crocodiles(data) {
-
   const response = http.get('https://test-api.k6.io/public/crocodiles/');
 
   check(response, { 'status is 200': (r) => r.status === 200 });
   if (response.status != 200) {
-      console.log(`operation: crocodiles, url: ${url}, Status:${response.status}`);
+      console.log(`operation: crocodiles, url: ${response.url}, Status:${response.status}`);
   }
-  sleep(1);
 }
